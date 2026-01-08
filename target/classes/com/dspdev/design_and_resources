@@ -1,0 +1,38 @@
+Resources:
+
+https://www.reddit.com/r/JavaFX/comments/1htlh3t/what_are_some_basic_javafx_applications_that_i/?chainedPosts=t3_vsrn8e
+    Calculator
+    File Explorer
+    Todo List with Database backend (SQLite)
+    Tix-Tac-Toe -> try with AI later.
+    Game of Fifteen
+    Conway's Game of Life
+    Simple Solar System Simulation. Basically, a few planets circling the sun.
+
+Concepts you should try to master:
+    If you use FXML, some MVC-type idea.
+    Database CRUD.
+    Reading and writing files. Txt, CVS, TSV, Excel, JSON, and XML.
+    Task and Service
+    Animation API. AnimationTimer, Timeline, and the Transitions.
+
+
+https://www.pragmaticcoding.ca/beginners/intro
+https://www.pragmaticcoding.ca/javafx/weather
+https://www.tutorialspoint.com/javafx/index.htm
+
+
+Design:
+
+3 types of notes:
+Main notes
+Trash notes - removed after 7 days in trash
+Locked notes
+
+Notes can be just text & images or lists.
+
+Reorder notes by click and drag.
+Reorder items by clicking on dots and dragging
+
+Add list on enter - text must not be empty
+list options: delete, make copy, add tag, convert to list/note
