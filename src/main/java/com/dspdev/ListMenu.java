@@ -64,7 +64,7 @@ public abstract class ListMenu {
         return manager.lists.get(listIndex).moveItem(itemIndex, destinationIndex);
     }
 
-    public static int enterIndex(ListManager manager, int listIndex){
+    private static int enterIndex(ListManager manager, int listIndex){
         System.out.print(ENTERNUMBER);
         itemIndex = input.nextInt() - OFFSET;
         input.nextLine();

@@ -15,15 +15,10 @@ public class ListManager {
       else return "List already exists";
    }
 
-   public String createList(String name, int index){
-      if(isNameValid(name)){lists.add(index, new MyList(name)); return "List \"" + name + "\" created.";}
-      else return "List already exists";
-   }
-
    public String moveList(int index , int destinationIndex){
       String listName = lists.get(index).toString();
       MyList listToMove = lists.get(index);
-      int OFFSET = 1;
+      final int OFFSET = 1;
 
       if(destinationIndex > index){
          lists.add(destinationIndex + OFFSET, listToMove);
@@ -54,7 +49,7 @@ public class ListManager {
       return (lists.get(index).items.isEmpty()) ? "The list \"" + listName + "\" is empty." : "Items from list \"" + listName + "\":\n" + lists.get(index).itemString();
    }
 
-   public boolean isNameValid(String name){
+   private boolean isNameValid(String name){
       return !lists.toString().contains(name);
    }
 
