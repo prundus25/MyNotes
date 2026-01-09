@@ -1,5 +1,5 @@
 module com.dspdev {
-    requires javafx.controls;
+    requires transitive javafx.controls;
     requires javafx.fxml;
 
     requires com.fasterxml.jackson.databind;

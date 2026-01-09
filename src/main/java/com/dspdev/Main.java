@@ -11,13 +11,14 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+    final Color customGrayBlue = Color.rgb(47, 49, 54);
     public static void main(String[] args) {
         launch(args);
     }
 
     @Override
     public void start(Stage stage) throws Exception {
-        final Color customGrayBlue = Color.rgb(47, 49, 54);
+        
         Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
         Scene scene = new Scene(root, customGrayBlue);
         Image icon = new Image(new FileInputStream("src/main/java/com/dspdev/LIcon.png"));
