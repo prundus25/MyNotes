@@ -1,6 +1,6 @@
 //create list object, rename, delete
 //import java.util.List;
-package com.dspdev;
+package com.dxp;
 
 import java.util.ArrayList;
 

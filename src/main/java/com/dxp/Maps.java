@@ -1,4 +1,4 @@
-package com.dspdev;
+package com.dxp;
 
 public abstract class Maps {
 

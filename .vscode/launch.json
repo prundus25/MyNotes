@@ -15,7 +15,7 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
-            "mainClass": "com.dspdev.Main",
+            "mainClass": "com.dxp.Main",
             "projectName": "MyNotes",
         }
     ]

@@ -1,4 +1,4 @@
-package com.dspdev;
+package com.dxp;
 
 import java.io.FileInputStream;
 
@@ -21,7 +21,7 @@ public class Main extends Application {
         
         Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
         Scene scene = new Scene(root, customGrayBlue);
-        Image icon = new Image(new FileInputStream("src/main/java/com/dspdev/LIcon.png"));
+        Image icon = new Image(new FileInputStream("src/main/java/com/dxp/LIcon.png"));
     
         stage.getIcons().add(icon);
         stage.setTitle("List Manager");
