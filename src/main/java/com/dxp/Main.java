@@ -39,6 +39,8 @@ public class Main extends Application {
 
         stage.setScene(scene);
         stage.show();
+        importData();
+        stage.setOnHiding( event -> {saveData();} );
     }
 
     public void importData(){
