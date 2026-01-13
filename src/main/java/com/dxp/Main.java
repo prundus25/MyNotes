@@ -39,18 +39,26 @@ public class Main extends Application {
 
         stage.setScene(scene);
         stage.show();
-
-        
     }
 
     public void importData(){
         try {
-            manager2.lists = mapper.readValue(new File("target/generated-sources/data.json"), mapper.getTypeFactory().constructCollectionType(ArrayList.class, MyList.class));
+            manager2.lists = mapper.readValue(new File("target/generated-sources/dataGUI.json"), mapper.getTypeFactory().constructCollectionType(ArrayList.class, MyList.class));
             System.out.println("Data loaded successfully.");
             dataImp = true;
         } catch (Exception e) {
             System.err.println("Error. No data could be loaded: ");
             dataImp = false;
+        }
+    }
+
+    public void saveData(){
+        try {
+            mapper.writeValue(new File("target/generated-sources/dataGUI.json"), manager2.lists);
+            System.out.println("Data saved successfully.");
+        } catch (Exception e) {
+            System.err.println("Couldn't save data.");
+            e.printStackTrace();
         }
     }
 }
