@@ -6,6 +6,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Label;
 import javafx.util.Duration;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 public class Controller {
     @FXML
@@ -16,6 +18,13 @@ public class Controller {
 
     @FXML
     private Label dataMessage;
+
+    @FXML
+    private Button exitBtn;
+    public void exitApp(){
+        Stage stage = (Stage) exitBtn.getScene().getWindow();
+        stage.close();
+    }
 
     @FXML
     public void addNote(ActionEvent e) {

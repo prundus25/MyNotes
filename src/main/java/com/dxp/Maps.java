@@ -1,7 +1,7 @@
 package com.dxp;
 
 public abstract class Maps {
-
+  /* 
   public static String mainMenu(ListManager manager, int option){
     return switch (option) {
       case 1 -> MainMenu.addCommand(manager);
@@ -21,4 +21,5 @@ public abstract class Maps {
       default -> "Invalid option, try again.";
     };
   }
+    */
 }

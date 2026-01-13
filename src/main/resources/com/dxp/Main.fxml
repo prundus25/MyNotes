@@ -6,6 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <StackPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #2f3136;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dxp.Controller">
    <children>
@@ -14,11 +15,27 @@
             <Button layoutX="30.0" layoutY="65.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #373a40;" text="Notes" textFill="#b6b9c2" />
             <Button layoutX="30.0" layoutY="125.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #373a40;" text="Locked Notes" textFill="#b6b9c2" />
             <Button layoutX="30.0" layoutY="185.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #373a40;" text="Deleted" textFill="#b6b9c2" />
+            <Button fx:id="exitBtn" layoutX="30.0" layoutY="674.0" mnemonicParsing="false" onAction="#exitApp" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #373a40;" text="Exit" textFill="#b6b9c2" />
+            <Text fill="#b6b9c2" layoutX="30.0" layoutY="741.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MyNotes" textAlignment="CENTER" wrappingWidth="100.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#b6b9c2" layoutX="30.0" layoutY="758.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note Manager" textAlignment="CENTER" wrappingWidth="100.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text fill="#b6b9c2" layoutX="30.0" layoutY="771.0" strokeType="OUTSIDE" strokeWidth="0.0" text="by DXP" textAlignment="CENTER" wrappingWidth="100.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
          </children>
       </AnchorPane>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="1120.0" StackPane.alignment="TOP_RIGHT">
          <children>
-            <TextField alignment="CENTER" layoutX="384.0" layoutY="62.0" prefHeight="36.0" prefWidth="200.0" promptText="Search your notes..." style="-fx-background-color: #373a40; -fx-text-fill: #b6b9c2;" />
+            <TextField alignment="CENTER" layoutX="460.0" layoutY="62.0" prefHeight="36.0" prefWidth="200.0" promptText="Search your notes..." style="-fx-background-color: #373a40; -fx-text-fill: #b6b9c2;" />
             <TextField fx:id="addNoteFld" alignment="CENTER" layoutX="105.0" layoutY="62.0" onAction="#addNote" prefHeight="36.0" prefWidth="200.0" promptText="+ Add a new note..." style="-fx-background-color: #373a40; -fx-text-fill: #b6b9c2;" />
             <Label fx:id="addMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="37.0" opacity="0.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#b6b9c2" />
             <Label fx:id="dataMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="460.0" layoutY="24.0" opacity="0.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#b6b9c2">
