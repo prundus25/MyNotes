@@ -41,7 +41,11 @@ public class Main extends Application {
         stage.show();
         importData();
         System.out.println(Main.manager2.lists);
+<<<<<<< HEAD
         stage.setOnHiding( event -> saveData() );
+=======
+        stage.setOnHiding( event -> {saveData();} );
+>>>>>>> 40abac77130277d10ac9d62dfd5cac2453862830
     }
 
     public void importData(){
