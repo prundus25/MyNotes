@@ -1,0 +1,19 @@
+[ {
+  "name" : "compra",
+  "items" : [ "cosa" ]
+}, {
+  "name" : "cosa",
+  "items" : [ ]
+}, {
+  "name" : "cosa2",
+  "items" : [ ]
+}, {
+  "name" : "comprà",
+  "items" : [ ]
+}, {
+  "name" : "idk",
+  "items" : [ ]
+}, {
+  "name" : "cosa3",
+  "items" : [ ]
+} ]

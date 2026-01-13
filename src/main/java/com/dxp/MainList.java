@@ -58,13 +58,13 @@ public class MainList {
                     System.out.println(SEPARATOR2);
                     if (option2 == 0){System.out.println("RETURNING TO MAIN MENU..." + SPACING); break;}
                     else {
-                        System.out.println(Maps.listMenu(manager, option2, listIndex));
+                        //System.out.println(Maps.listMenu(manager, option2, listIndex));
                     }
                     System.out.println(SEPARATOR2 + SPACING);
                 }
             }else{
                 System.out.println(SEPARATOR2);
-                System.out.println(Maps.mainMenu(manager, option));
+                //System.out.println(Maps.mainMenu(manager, option));
                 System.out.println(SEPARATOR2 + SPACING);
             }
         }

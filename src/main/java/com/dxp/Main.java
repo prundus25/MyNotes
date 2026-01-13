@@ -35,11 +35,12 @@ public class Main extends Application {
         Image icon = new Image(new FileInputStream("src/main/java/com/dxp/LIcon.png"));
     
         stage.getIcons().add(icon);
-        stage.setTitle("List Manager");
+        stage.setTitle("MyNotes");
 
         stage.setScene(scene);
         stage.show();
         importData();
+        System.out.println(Main.manager2.lists);
         stage.setOnHiding( event -> {saveData();} );
     }
 
@@ -50,6 +51,7 @@ public class Main extends Application {
             dataImp = true;
         } catch (Exception e) {
             System.err.println("Error. No data could be loaded: ");
+            e.printStackTrace();
             dataImp = false;
         }
     }
