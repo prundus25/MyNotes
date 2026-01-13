@@ -10,9 +10,9 @@ public class ListManager {
    public ListManager() {
    }
 
-   public String createList(String name){
-      if(isNameValid(name)){lists.add(new MyList(name)); return "List \"" + name + "\" created.";}
-      else return "List already exists";
+   public boolean createList(String name){
+      if(isNameValid(name)){lists.add(new MyList(name)); return true;}
+      else return false;
    }
 
    public String moveList(int index , int destinationIndex){

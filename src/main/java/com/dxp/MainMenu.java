@@ -17,7 +17,7 @@ public abstract class MainMenu {
         return name + "\n" + options + "\n" + manager.getLists() + "\nEnter option: ";
     }
 
-    public static String addCommand(ListManager manager){
+    public static boolean addCommand(ListManager manager){
         System.out.print("Enter list name: ");
         elementName = input.nextLine();
         return manager.createList(elementName);
