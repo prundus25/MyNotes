@@ -10,9 +10,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -22,6 +24,8 @@ public class Main extends Application {
     public static ListManager manager2 = new ListManager();
     final Color customGrayBlue = Color.rgb(47, 49, 54);
     static boolean dataImp = false;
+    @FXML
+    private Label dataMessage;
 
     public static void main(String[] args) {
         mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
@@ -44,7 +48,7 @@ public class Main extends Application {
         stage.setOnHiding( event -> saveData() );
     }
 
-    public void importData(){
+    public static void importData(){
         try {
             manager2.lists = mapper.readValue(new File("target/generated-sources/dataGUI.json"), mapper.getTypeFactory().constructCollectionType(ArrayList.class, MyList.class));
             System.out.println("Data loaded successfully.");
@@ -56,7 +60,7 @@ public class Main extends Application {
         }
     }
 
-    public void saveData(){
+    public static void saveData(){
         try {
             mapper.writeValue(new File("target/generated-sources/dataGUI.json"), manager2.lists);
             System.out.println("Data saved successfully.");

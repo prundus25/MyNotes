@@ -3,11 +3,11 @@ package com.dxp;
 import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.TextField;
-import javafx.scene.control.Label;
-import javafx.util.Duration;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 public class Controller {
     @FXML
@@ -15,9 +15,6 @@ public class Controller {
 
     @FXML
     private Label addMessage;
-
-    @FXML
-    private Label dataMessage;
 
     @FXML
     private Button exitBtn;
