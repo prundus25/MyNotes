@@ -24,6 +24,20 @@ public class Controller {
     }
 
     @FXML
+    private Label dataMessage;
+
+    public void displayDataMsg(){
+        if (Main.dataImp) dataMessage.setText("Data loaded successfully!");
+        else dataMessage.setText("Error. No data could be loaded.");
+        FadeTransition fadeDataMsg = new FadeTransition(Duration.seconds(3), dataMessage);
+            fadeDataMsg.setFromValue(1.0);
+            fadeDataMsg.setToValue(0.0);
+            fadeDataMsg.setCycleCount(1);
+            fadeDataMsg.setAutoReverse(true);
+            fadeDataMsg.play();
+    }
+
+    @FXML
     public void addNote(ActionEvent e) {
         String elementName = addNoteFld.getText();
         FadeTransition fadeAdd = new FadeTransition(Duration.seconds(3), addMessage);

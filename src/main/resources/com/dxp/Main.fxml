@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -12,10 +13,10 @@
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="160.0" style="-fx-background-color: #242529;" StackPane.alignment="TOP_LEFT">
          <children>
-            <Button layoutX="30.0" layoutY="65.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #373a40;" text="Notes" textFill="#b6b9c2" />
-            <Button layoutX="30.0" layoutY="125.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #373a40;" text="Locked" textFill="#b6b9c2" />
-            <Button layoutX="30.0" layoutY="185.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #373a40;" text="Deleted" textFill="#b6b9c2" />
-            <Button fx:id="exitBtn" layoutX="30.0" layoutY="674.0" mnemonicParsing="false" onAction="#exitApp" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #373a40;" text="Exit" textFill="#b6b9c2" />
+            <Button layoutX="30.0" layoutY="65.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #373a40; -fx-background-radius: 10;" text="Notes" textFill="#b6b9c2" />
+            <Button layoutX="30.0" layoutY="125.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #373a40; -fx-background-radius: 10;" text="Locked" textFill="#b6b9c2" />
+            <Button layoutX="30.0" layoutY="185.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #373a40; -fx-background-radius: 10;" text="Deleted" textFill="#b6b9c2" />
+            <Button fx:id="exitBtn" layoutX="30.0" layoutY="674.0" mnemonicParsing="false" onAction="#exitApp" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #373a40; -fx-background-radius: 10;" text="Exit" textFill="#b6b9c2" />
             <Text fill="#b6b9c2" layoutX="30.0" layoutY="741.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MyNotes" textAlignment="CENTER" wrappingWidth="100.0">
                <font>
                   <Font name="System Bold" size="12.0" />
@@ -38,11 +39,20 @@
             <TextField alignment="CENTER" layoutX="460.0" layoutY="62.0" prefHeight="36.0" prefWidth="200.0" promptText="Search your notes..." style="-fx-background-color: #373a40; -fx-text-fill: #b6b9c2;" />
             <TextField fx:id="addNoteFld" alignment="CENTER" layoutX="105.0" layoutY="62.0" onAction="#addNote" prefHeight="36.0" prefWidth="200.0" promptText="+ Add a new note..." style="-fx-background-color: #373a40; -fx-text-fill: #b6b9c2;" />
             <Label fx:id="addMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="37.0" opacity="0.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#b6b9c2" />
-            <Label fx:id="dataMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="442.0" layoutY="22.0" opacity="0.0" prefHeight="30.0" prefWidth="236.0" textAlignment="CENTER" textFill="#b6b9c2">
+            <Label fx:id="dataMessage2" alignment="CENTER" contentDisplay="CENTER" layoutX="442.0" layoutY="22.0" opacity="0.0" prefHeight="30.0" prefWidth="236.0" textAlignment="CENTER" textFill="#b6b9c2">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
+            <Pane layoutX="835.0" layoutY="17.0" prefHeight="48.0" prefWidth="267.0" style="-fx-background-radius: 15; -fx-background-color: #373a40;">
+               <children>
+                  <Label fx:id="dataMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="9.0" opacity="0.0" prefHeight="30.0" prefWidth="236.0" text="Data loaded succesfully!" textAlignment="CENTER" textFill="#b6b9c2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
          </children>
       </AnchorPane>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1120.0" StackPane.alignment="BOTTOM_RIGHT" />

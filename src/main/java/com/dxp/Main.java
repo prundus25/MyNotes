@@ -10,11 +10,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 import javafx.application.Application;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -24,8 +22,6 @@ public class Main extends Application {
     public static ListManager manager2 = new ListManager();
     final Color customGrayBlue = Color.rgb(47, 49, 54);
     static boolean dataImp = false;
-    @FXML
-    private Label dataMessage;
 
     public static void main(String[] args) {
         mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
@@ -34,7 +30,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Main.fxml"));
+        Parent root = loader.load();
+        Controller ctrl = (Controller)(loader.getController());
+
         Scene scene = new Scene(root, customGrayBlue);
         Image icon = new Image(new FileInputStream("src/main/java/com/dxp/LIcon.png"));
     
@@ -44,6 +43,7 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.show();
         importData();
+        ctrl.displayDataMsg();
         System.out.println(Main.manager2.lists);
         stage.setOnHiding( event -> saveData() );
     }
