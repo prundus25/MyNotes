@@ -39,11 +39,6 @@
             <TextField alignment="CENTER" layoutX="460.0" layoutY="62.0" prefHeight="36.0" prefWidth="200.0" promptText="Search your notes..." style="-fx-background-color: #373a40; -fx-text-fill: #b6b9c2;" />
             <TextField fx:id="addNoteFld" alignment="CENTER" layoutX="105.0" layoutY="62.0" onAction="#addNote" prefHeight="36.0" prefWidth="200.0" promptText="+ Add a new note..." style="-fx-background-color: #373a40; -fx-text-fill: #b6b9c2;" />
             <Label fx:id="addMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="37.0" opacity="0.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#b6b9c2" />
-            <Label fx:id="dataMessage2" alignment="CENTER" contentDisplay="CENTER" layoutX="442.0" layoutY="22.0" opacity="0.0" prefHeight="30.0" prefWidth="236.0" textAlignment="CENTER" textFill="#b6b9c2">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
             <Pane fx:id="notifPane" layoutX="1102.0" layoutY="17.0" prefHeight="48.0" prefWidth="0.0" style="-fx-background-radius: 15; -fx-background-color: #373a40;">
                <children>
                   <Label fx:id="dataMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="9.0" opacity="0.0" prefHeight="30.0" prefWidth="236.0" text="Data loaded succesfully!" textAlignment="CENTER" textFill="#b6b9c2">

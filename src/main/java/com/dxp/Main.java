@@ -19,7 +19,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     static ObjectMapper mapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
-    public static ListManager manager2 = new ListManager();
+    public static final ListManager manager2 = new ListManager();
     final Color customGrayBlue = Color.rgb(47, 49, 54);
     static boolean dataImp = false;
 
