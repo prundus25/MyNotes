@@ -44,7 +44,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Pane layoutX="835.0" layoutY="17.0" prefHeight="48.0" prefWidth="267.0" style="-fx-background-radius: 15; -fx-background-color: #373a40;">
+            <Pane fx:id="notifPane" layoutX="1102.0" layoutY="17.0" prefHeight="48.0" prefWidth="0.0" style="-fx-background-radius: 15; -fx-background-color: #373a40;">
                <children>
                   <Label fx:id="dataMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="9.0" opacity="0.0" prefHeight="30.0" prefWidth="236.0" text="Data loaded succesfully!" textAlignment="CENTER" textFill="#b6b9c2">
                      <font>

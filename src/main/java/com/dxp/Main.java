@@ -43,6 +43,7 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.show();
         importData();
+        ctrl.displayNotif();
         ctrl.displayDataMsg();
         System.out.println(Main.manager2.lists);
         stage.setOnHiding( event -> saveData() );
